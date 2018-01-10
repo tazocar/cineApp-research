@@ -1,0 +1,63 @@
+*{
+  box-sizing: border-box;
+  clear: both;
+}
+.superCenteredContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btnSectionOne{
+  width: 100%;
+}
+.one{
+  height: 100vh;
+  width: 100%;
+  background-color: pink;
+  padding-top: 5em;
+}
+.two{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  padding-top: 5em;
+}
+.three{
+  height: 100vh;
+  width: 100%;
+  background-color: purple;
+  padding-top: 5em;
+}
+.randomMovieImg{
+  width: 15em;
+  height: 15em;
+  background-color: black;
+  background-size: cover;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.chooseDate{
+  width: 80%;
+  margin: 0 auto;
+}
+.dayContent{
+  padding-bottom: 2em;
+}
+.dateOptionOne{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background-color: orange;
+  background-size: cover;
+}
+.dateOptionTwo{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background-color: green;
+  background-size: cover;
+}
+p.center{
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}

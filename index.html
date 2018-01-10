@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="one">
+    <div class="randomMovie center">
+      <div class="randomMovieImg"></div>
+      <h3 class="randomMovieName"></h3>
+      <h5 class="randomMovieDirector"></h5>
+      <p class="randomMovieDescription"></p>
+    </div>
+    <div class="superCenteredContent btnSectionOne">
+      <button id="toTwo" class="btn">A la Seccion 2</button>
+      <button id="sendNewMovie" class="btn">Cambiar Pelicula</button>
+    </div>
+  </div>
+  <div class="two">
+    <div class="chooseDate">
+      <input type="date" class="datepicker" placeholder="Selecciona un día">
+    </div>
+    <div class="dayContent superCenteredContent">
+      <div class="dateOptionOne">
+        <p class="dateOptionOneTitle center">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="dateOptionTwo">
+        <p class="dateOptionTwoTitle center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing.
+        </p>
+      </div>
+    </div>
+    <h5 class="center">La batalla de la Semana!!!</h5>
+    <div class="superCenteredContent">
+      <button id="toThree" class="btn">A la Seccion 3</button>
+    </div>
+  </div>
+  <div class="three">
+    <div class="movieSearch">
+      <form id="searchForm" class="chooseDate">
+        <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+      </form>
+    </div>
+    <div class="superCenteredContent btnSectionOne">
+      <button id="toOne" class="btn">A la Seccion 1</button>
+    </div>
+  </div>
+
+  <!--jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Self -->
+  <script src="app.js"></script>
+</body>
+</html>
