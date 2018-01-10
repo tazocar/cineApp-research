@@ -61,3 +61,6 @@ p.center{
   color: white;
   text-shadow: 2px 2px 2px black;
 }
+.movieSearch{
+  width: 80%;
+}

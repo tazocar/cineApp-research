@@ -7,6 +7,14 @@
 // ab5e691e7bd5861864fbd7dfb8909186 - mi apiKey de TMDB
 $(document).ready(function(){
   setRandomMovie();
+  $('input.autocomplete').autocomplete({
+    data: "",
+    limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+    onAutocomplete: function(val) {
+      // Callback function when value is autcompleted.
+    },
+    minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+  });
 })
 //Array para películas Random
 var moviesArray = ["Ant Man", "Star Wars", "Game of Thrones", "Harry Potter"];
@@ -113,15 +121,32 @@ $('.datepicker').on("change", function(){
 
 ////////////////////////////////////////////////////////////////// HASTA ACA///////////////////////////////// /////////////////////////////////////////
 
-// Search
-$("#searchForm").on("submit", function(e){
-  var searchText = $("#searchText").val();
-  getMovies(searchText)
-  e.preventDefault();
+/*$("#movieSearchInput").keyup(function(){
+  var test = $("#movieSearchInput").val();
+  var arrMoviesToShowOnSearch = {}
+  var searchMovie = $.getJSON( "http://www.omdbapi.com/?s=" + test + "&apikey=3a181f1c", function(chosenMovie) {
+    if (!chosenMovie.Error) {
+      for (var i = 0; i < chosenMovie.Search.length; i++) {
+        arrMoviesToShowOnSearch.push(chosenMovie.Search[i].Title + ":" + "null,")
+        console.log(chosenMovie.Search[i].Title)
+      }
+      moviesToShowOnSearch == arrMoviesToShowOnSearch;
+    }
+  });
+})*/
+
+$("#movieSearchInput").keyup(function(){
+  var test = {};
+  for (var i = 0; i < 5; i++) {
+    test.i = null;
+    console.log(test)
+  }
 })
 
-
-function getMovies(searchText){
-  console.log(searchText);
-}
-/////////////////////////////////
+/*$.getJSON( "http://www.omdbapi.com/?s=ape&apikey=3a181f1c", function(chosenMovie) {
+    if (!chosenMovie.Error) {
+      for (var i = 0; i < chosenMovie.Search.length; i++) {
+        console.log(chosenMovie.Search[i].Title)
+      }
+    }
+  })*/
